@@ -6,11 +6,13 @@ from pymf import *
 
 # Lets build a ratings matrix
 
-K = 30
+K = 10
 
 df = pd.read_csv("./data/small/ratings.csv")
 # df = pd.read_csv("./data/1M/ratings.dat", sep='::')
 df.columns = ['userId', 'movieId', 'rating', 'timestamp']
+
+max_movie_id = df['movieId'].max()
 ratings = df.pivot(index="movieId", columns="userId", values="rating")
 
 ratings.fillna(0, inplace=True)
@@ -33,12 +35,24 @@ def callout(arg):
 
 
 nmf_model = WNMF(rMatrix, weight_matrix, num_bases=K)
-nmf_model.factorize(niter=100, show_progress=True, epoch_hook=lambda x: callout(x))
+nmf_model.factorize(niter=10, show_progress=True, epoch_hook=lambda x: callout(x))
 
 movies = nmf_model.W
 
-basis_examples = []
+print(movies.shape)
 
+# Get the tag relevance matrix
+genome_relevance = pd.read_csv("./data/genome/tag_relevance.dat", header=None, sep='\t')
+genome_relevance.columns = ["movieId", "tagId", "relevance"]
+# Pad out the pivot
+genome_relevance = genome_relevance.set_value(len(genome_relevance), max_movie_id, 1, 0)
+
+relevance = genome_relevance.pivot(index="movieId", columns="tagId", values="relevance")
+print(relevance.shape)
+
+
+basis_examples = []
+""""
 for i in range(0, K):
     col_array = np.asarray(movies[:, i])
     topten = col_array.argsort()[-10:][::-1]
@@ -53,3 +67,4 @@ for i in basis_examples:
     count += 1
     for j in i:
         print(movie_data['title'].iloc[j])
+"""

@@ -3,22 +3,33 @@
 
 import pandas as pd
 import numpy as np
+from collections import defaultdict
 
 
 base_dir = "./data/small/"
 
-# load in genome movie list
 
 base_movies = pd.read_csv(base_dir + "movies.csv")
-reverse_map = dict(list(zip(base_movies.title, base_movies.movieId)))
-print(reverse_map)
+base_map = defaultdict(int, list(zip(base_movies.title, base_movies.movieId)))
 
-"""
+# load in genome movie list
 genome_movies = pd.read_csv("./data/genome/movies.dat", header=None, sep='\t')
 genome_movies.columns = ["id", "title", "popularity"]
-reverse_map = dict(list(zip(genome_movies.title, genome_movies.id)))
-"""
+genome_map = defaultdict(int, list(zip(genome_movies.id, genome_movies.title)))
 
+# Load in genome tag relevance
+
+genome_relevance = pd.read_csv("./data/genome/tag_relevance.dat", header=None, sep='\t')
+genome_relevance.columns = ["movieId", "tagId", "relevance"]
+
+def replace_id(id):
+    film_title = genome_map[id]
+    base_id = base_map[film_title]
+    return base_id
+
+genome_relevance["movieId"] = genome_relevance["movieId"].apply(lambda x: replace_id(x))
+
+print(genome_relevance)
 
 
 
