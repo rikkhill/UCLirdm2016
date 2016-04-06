@@ -3,6 +3,7 @@
 import numpy as np
 import pandas as pd
 from pymf import *
+from collections import defaultdict
 
 # Lets build a ratings matrix
 
@@ -12,8 +13,12 @@ df = pd.read_csv("./data/small/ratings.csv")
 # df = pd.read_csv("./data/1M/ratings.dat", sep='::')
 df.columns = ['userId', 'movieId', 'rating', 'timestamp']
 
-max_movie_id = df['movieId'].max()
+
 ratings = df.pivot(index="movieId", columns="userId", values="rating")
+
+print(df["movieId"].unique().shape)
+
+print(ratings.shape)
 
 ratings.fillna(0, inplace=True)
 
@@ -35,24 +40,43 @@ def callout(arg):
 
 
 nmf_model = WNMF(rMatrix, weight_matrix, num_bases=K)
-nmf_model.factorize(niter=10, show_progress=True, epoch_hook=lambda x: callout(x))
+nmf_model.factorize(niter=1, show_progress=True, epoch_hook=lambda x: callout(x))
 
 movies = nmf_model.W
 
 print(movies.shape)
 
+base_movies = df["movieId"].unique().tolist()
+
+
 # Get the tag relevance matrix
-genome_relevance = pd.read_csv("./data/genome/tag_relevance.dat", header=None, sep='\t')
-genome_relevance.columns = ["movieId", "tagId", "relevance"]
+
+gr = pd.read_csv("./data/genome/tag_relevance.dat", header=None, sep='\t')
+gr.columns = ["movieId", "tagId", "relevance"]
+
+# Trim all movies that aren't in the base movies
+gr = gr[gr["movieId"].isin(base_movies)]
+
+
+gr_movies = set(gr["movieId"].unique().tolist())
+setdiff = [bm for bm in base_movies if bm not in gr_movies]
+empty_data = pd.DataFrame([(m_id, 0, 0) for m_id in setdiff])
+empty_data.columns = ["movieId", "tagId", "relevance"]
+
+gr = gr.append(empty_data)
+
+print(gr)
+
 # Pad out the pivot
+
+"""
 genome_relevance = genome_relevance.set_value(len(genome_relevance), max_movie_id, 1, 0)
 
 relevance = genome_relevance.pivot(index="movieId", columns="tagId", values="relevance")
 print(relevance.shape)
 
-
 basis_examples = []
-""""
+
 for i in range(0, K):
     col_array = np.asarray(movies[:, i])
     topten = col_array.argsort()[-10:][::-1]
