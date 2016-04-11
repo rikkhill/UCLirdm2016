@@ -8,7 +8,6 @@ from collections import defaultdict
 
 base_dir = "./data/1M/"
 
-
 base_movies = pd.read_csv(base_dir + "movies.dat", sep="::", header=None, engine='python')
 base_movies.columns = ["movieId", "title", "genre"]
 

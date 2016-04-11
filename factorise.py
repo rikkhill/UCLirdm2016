@@ -38,17 +38,16 @@ weight_matrix[np.array(m_indices)[:, None], n_indices] = 0
 def callout(arg):
     print(arg.frobenius_norm(complement=True))
 
-
-nmf_model = WNMF(rMatrix, weight_matrix, num_bases=K)
-nmf_model.factorize(niter=100, show_progress=True, epoch_hook=lambda x: callout(x))
+nmf_model = WNMF(rMatrix, weight_matrix, num_bases=K, mask_zeros=True)
+nmf_model.factorize(niter=300, show_progress=True, epoch_hook=lambda x: callout(x))
 
 movies = nmf_model.W
-
-print(movies.shape)
+users = nmf_model.H
+np.savetxt("dimmovies.csv", movies)
+np.savetxt("dimusers.csv", users)
 
 base_movies = df["movieId"].unique().tolist()
 
-"""
 # Get the tag relevance matrix
 
 gr = pd.read_csv("./data/genome/tag_relevance.dat", header=None, sep='\t')
@@ -65,33 +64,9 @@ empty_data.columns = ["movieId", "tagId", "relevance"]
 
 gr = gr.append(empty_data)
 
-print(gr)
-
 # Pad out the pivot
+relevance = gr.pivot(index="movieId", columns="tagId", values="relevance")
 
-
-genome_relevance = genome_relevance.set_value(len(genome_relevance), max_movie_id, 1, 0)
-
-relevance = genome_relevance.pivot(index="movieId", columns="tagId", values="relevance")
-print(relevance.shape)
-"""
-basis_examples = []
-
-for i in range(0, K):
-    col_array = np.asarray(movies[:, i])
-    topten = col_array.argsort()[-10:][::-1]
-    basis_examples.append(topten)
-
-# Get movie data
-movie_data = pd.read_csv("./data/small/movies.csv")
-
-print(movies[movie_data[movie_data["title"] == "Bedazzled (2000)"].index.values[0], :])
-
-count = 1
-for i in basis_examples:
-    print("\nBasis %d" % count)
-    count += 1
-    for j in i:
-        print(movie_data['title'].iloc[j])
-
+basis_relevance = np.dot(movies.T, relevance)
+np.savetxt("dimrel.csv", basis_relevance)
 
