@@ -18,7 +18,6 @@ n_indices = np.random.choice(d_n, int(d_n * hold_out_proportion), replace=False)
 weight_matrix = np.ones(data.shape)
 weight_matrix[np.array(m_indices)[:, None], n_indices] = 0
 
-
 def callout(arg):
     print(arg.frobenius_norm(complement=True))
 

@@ -27,7 +27,7 @@ rMatrix = ratings.as_matrix()
 (d_m, d_n) = rMatrix.shape
 
 # Lets make a bi-cross-validation weight matrix
-hold_out_proportion = 0.5
+hold_out_proportion = 0.2
 m_indices = np.random.choice(d_m, int(d_m * hold_out_proportion), replace=False).tolist()
 n_indices = np.random.choice(d_n, int(d_n * hold_out_proportion), replace=False).tolist()
 
@@ -40,7 +40,7 @@ def callout(arg):
 
 
 nmf_model = WNMF(rMatrix, weight_matrix, num_bases=K)
-nmf_model.factorize(niter=1, show_progress=True, epoch_hook=lambda x: callout(x))
+nmf_model.factorize(niter=100, show_progress=True, epoch_hook=lambda x: callout(x))
 
 movies = nmf_model.W
 
@@ -48,7 +48,7 @@ print(movies.shape)
 
 base_movies = df["movieId"].unique().tolist()
 
-
+"""
 # Get the tag relevance matrix
 
 gr = pd.read_csv("./data/genome/tag_relevance.dat", header=None, sep='\t')
@@ -69,12 +69,12 @@ print(gr)
 
 # Pad out the pivot
 
-"""
+
 genome_relevance = genome_relevance.set_value(len(genome_relevance), max_movie_id, 1, 0)
 
 relevance = genome_relevance.pivot(index="movieId", columns="tagId", values="relevance")
 print(relevance.shape)
-
+"""
 basis_examples = []
 
 for i in range(0, K):
@@ -85,10 +85,13 @@ for i in range(0, K):
 # Get movie data
 movie_data = pd.read_csv("./data/small/movies.csv")
 
+print(movies[movie_data[movie_data["title"] == "Bedazzled (2000)"].index.values[0], :])
+
 count = 1
 for i in basis_examples:
     print("\nBasis %d" % count)
     count += 1
     for j in i:
         print(movie_data['title'].iloc[j])
-"""
+
+
