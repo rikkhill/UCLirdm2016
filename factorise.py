@@ -39,7 +39,7 @@ def callout(arg):
     print(arg.frobenius_norm(complement=True))
 
 nmf_model = WNMF(rMatrix, weight_matrix, num_bases=K, mask_zeros=True)
-nmf_model.factorize(niter=300, show_progress=True, epoch_hook=lambda x: callout(x))
+nmf_model.factorize(niter=100, show_progress=True, epoch_hook=lambda x: callout(x))
 
 movies = nmf_model.W
 users = nmf_model.H
@@ -66,6 +66,8 @@ gr = gr.append(empty_data)
 
 # Pad out the pivot
 relevance = gr.pivot(index="movieId", columns="tagId", values="relevance")
+relevance.fillna(0, inplace=True)
+relevance = relevance.as_matrix()
 
 basis_relevance = np.dot(movies.T, relevance)
 np.savetxt("dimrel.csv", basis_relevance)

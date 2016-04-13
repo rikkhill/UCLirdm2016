@@ -8,11 +8,13 @@ from collections import defaultdict
 
 base_dir = "./data/1M/"
 
+dim = 200
+
 base_movies = pd.read_csv(base_dir + "movies.dat", sep="::", header=None, engine='python')
 base_movies.columns = ["movieId", "title", "genre"]
 
-rel_matrix = np.loadtxt("./data/outputk10/dimrel.csv", delimiter=",")
-movie_matrix = np.loadtxt("./data/outputk10/dimmovie.csv", delimiter=",")
+rel_matrix = np.loadtxt("./output/dimrelK%d.csv" % dim, delimiter=" ")
+movie_matrix = np.loadtxt("./output/dimmoviesK%d.csv" % dim, delimiter=" ")
 
 tags = pd.read_csv("./data/genome/tags.dat", sep="\t", header=None)
 tags.columns = ["tagId", "tag", "popularity"]

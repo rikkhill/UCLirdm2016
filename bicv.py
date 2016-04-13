@@ -2,8 +2,8 @@ from pymf import NMF, WNMF, base
 import numpy as np
 import pandas as pd
 
-# df = pd.read_csv("./data/1M/ratings.dat", sep='::', engine='python')
-df = pd.read_csv("./data/small/ratings.csv")
+df = pd.read_csv("./data/1M/ratings.dat", sep='::', engine='python')
+# df = pd.read_csv("./data/small/ratings.csv")
 df.columns = ['userId', 'movieId', 'rating', 'timestamp']
 ratings = df.pivot(index="movieId", columns="userId", values="rating")
 ratings.fillna(0, inplace=True)
@@ -19,14 +19,13 @@ n_indices = np.random.choice(d_n, int(d_n * hold_out_proportion), replace=False)
 weight_matrix = np.ones(data.shape)
 weight_matrix[np.array(m_indices)[:, None], n_indices] = 0
 
-
 results = []
 
 
 def callout(arg):
     print(arg.frobenius_norm(complement=True))
 
-for K in []:
+for K in range(1, 21):
     print("Beginning %d:" % K)
     wnmf = WNMF(data, weight_matrix, num_bases=K, mask_zeros=True)
     wnmf.factorize(niter=10, show_progress=True, epoch_hook=lambda x: callout(x))
