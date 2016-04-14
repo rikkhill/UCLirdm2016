@@ -56,11 +56,14 @@ print("Recommended movies:")
 for i in range(0, N):
     print("\t" + base_movies.iloc[movie_i[i]]["title"])
 
+
+fig = plt.figure(figsize = (8, 6), dpi = 80)
+ax = fig.add_subplot(211)
+ax.plot(range(1,K+1), user, label = 'user {}'.format(user_i), linewidth=2, c='black') 
 for i in movie_i:
-    movie = movies[i]
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    ax.plot(range(1,K+1), user)
-    ax.plot(range(1,K+1), movie)
-    fig.suptitle('user {}, {}'.format(user_i, base_movies.iloc[i]["title"]))
-    plt.show(fig)
+    movie = movies[i] 
+    ax.plot(range(1,K+1), movie, label = base_movies.iloc[i]["title"])
+ax.legend(bbox_to_anchor=(0.5, -0.75), loc='lower center', ncol=2)
+#this is to make the user to be on top, but the first on the legend
+ax.plot(range(1,K+1), user, label = 'user {}'.format(user_i), linewidth=2, c='black') 
+plt.show(fig)
