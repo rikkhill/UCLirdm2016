@@ -1,0 +1,120 @@
+
+Basis 1
+['aliens', 'technology', 'space', 'allegory', 'sci-fi', 'future', 'futuristic', 'weapons', 'scifi', 'sci fi']
+['2001: A Space Odyssey (1968)', 'Close Encounters of the Third Kind (1977)', 'Star Trek: The Wrath of Khan (1982)', 'Blade Runner (1982)', 'Star Trek: First Contact (1996)', 'Star Trek IV: The Voyage Home (1986)', 'Contact (1997)', 'Twelve Monkeys (1995)', 'Aliens (1986)', 'Terminator, The (1984)']
+
+Basis 2
+['melancholic', 'loneliness', 'oscar (best supporting actress)', 'cinematography', 'dramatic', 'masterpiece', 'criterion', 'culture clash', 'social commentary', 'oscar (best actress)']
+['Dangerous Liaisons (1988)', 'Amadeus (1984)', 'Witness (1985)', 'Room with a View, A (1986)', 'Gandhi (1982)', 'My Left Foot (1989)', 'Cinema Paradiso (1988)', 'Sex, Lies, and Videotape (1989)', 'Last Emperor, The (1987)', 'Killing Fields, The (1984)']
+
+Basis 3
+['lone hero', 'exciting', 'cool', 'fight scenes', 'big budget', 'weapons', 'fast paced', 'action packed', 'natural disaster', 'good action']
+['Die Hard: With a Vengeance (1995)', 'True Lies (1994)', 'Con Air (1997)', 'Die Hard 2 (1990)', 'GoldenEye (1995)', 'Tomorrow Never Dies (1997)', 'Mission: Impossible (1996)', 'Air Force One (1997)', 'Rock, The (1996)', 'Lethal Weapon 3 (1992)']
+
+Basis 4
+["so bad it's funny", 'silly', 'natural disaster', 'first contact', 'goofy', 'silly fun', 'predictable', 'fun', 'entertaining', 'family']
+['Robin Hood: Men in Tights (1993)', 'Waterboy, The (1998)', 'Liar Liar (1997)', 'Ace Ventura: Pet Detective (1994)', 'Home Alone (1990)', 'Tommy Boy (1995)', 'Back to the Future Part III (1990)', 'Nutty Professor, The (1996)', 'Home Alone 2: Lost in New York (1992)', 'Big Daddy (1999)']
+
+Basis 5
+['excellent', 'adapted from:book', 'oscar', 'redemption', 'oscar winner', 'cinematography', 'dramatic', 'greed', 'oscar (best actress)', 'intense']
+['Good Will Hunting (1997)', 'Shawshank Redemption, The (1994)', "Schindler's List (1993)", 'Apollo 13 (1995)', 'Truman Show, The (1998)', 'Dances with Wolves (1990)', 'Dead Man Walking (1995)', 'Fried Green Tomatoes (1991)', 'Philadelphia (1993)', 'River Runs Through It, A (1992)']
+
+Basis 6
+['series', 'fantasy', 'good versus evil', 'franchise', 'oscar (best effects - visual effects)', 'scifi', 'sci fi', 'science fiction', 'highly quotable', 'special effects']
+['Star Wars: Episode IV - A New Hope (1977)', 'Star Wars: Episode V - The Empire Strikes Back (1980)', 'Star Wars: Episode VI - Return of the Jedi (1983)', 'Raiders of the Lost Ark (1981)', 'Princess Bride, The (1987)', 'Indiana Jones and the Last Crusade (1989)', 'Back to the Future (1985)', 'Star Wars: Episode I - The Phantom Menace (1999)', 'Terminator, The (1984)', 'E.T. the Extra-Terrestrial (1982)']
+
+Basis 7
+['enigmatic', 'complex', 'atmospheric', 'highly quotable', 'tense', 'cinematography', 'masterpiece', 'greed', 'criterion', 'social commentary']
+['Chinatown (1974)', 'Rear Window (1954)', 'North by Northwest (1959)', 'Casablanca (1942)', 'Maltese Falcon, The (1941)', 'Vertigo (1958)', 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963)', 'Manchurian Candidate, The (1962)', 'Psycho (1960)', 'Citizen Kane (1941)']
+
+Basis 8
+['very good', 'redemption', 'predictable', 'dramatic', 'very funny', 'brutality', 'suspense', 'visually appealing', 'intense', 'pg-13']
+['Gladiator (2000)', 'Patriot, The (2000)', 'Almost Famous (2000)', 'High Fidelity (2000)', 'Frequency (2000)', 'Meet the Parents (2000)', 'X-Men (2000)', 'U-571 (2000)', 'Perfect Storm, The (2000)', 'Erin Brockovich (2000)']
+
+Basis 9
+['violent', 'gunfight', 'good action', 'highly quotable', 'quotable', 'tense', 'violence', 'original plot', 'adventure', 'action']
+['Die Hard (1988)', 'Godfather, The (1972)', 'Jaws (1975)', 'Terminator, The (1984)', 'Godfather: Part II, The (1974)', 'Goldfinger (1964)', 'Alien (1979)', 'Rocky (1976)', 'Aliens (1986)', 'Untouchables, The (1987)']
+
+Basis 10
+['oscar (best supporting actress)', 'oscar', 'oscar winner', 'cinematography', 'dramatic', 'masterpiece', 'criterion', 'culture clash', 'social commentary', 'oscar (best actress)']
+["One Flew Over the Cuckoo's Nest (1975)", 'American Graffiti (1973)', 'Bonnie and Clyde (1967)', 'Midnight Cowboy (1969)', 'Graduate, The (1967)', 'Network (1976)', 'To Kill a Mockingbird (1962)', 'French Connection, The (1971)', 'Cool Hand Luke (1967)', 'Serpico (1973)']
+
+Basis 11
+['enigmatic', 'witty', 'atmospheric', 'oscar (best supporting actress)', 'cinematography', 'dramatic', 'masterpiece', 'greed', 'criterion', 'culture clash']
+['It Happened One Night (1934)', 'His Girl Friday (1940)', 'Philadelphia Story, The (1940)', 'Notorious (1946)', 'Bringing Up Baby (1938)', 'Some Like It Hot (1959)', 'Double Indemnity (1944)', 'Sunset Blvd. (a.k.a. Sunset Boulevard) (1950)', 'Key Largo (1948)', 'All About Eve (1950)']
+
+Basis 12
+['oscar (best picture)', 'powerful ending', 'narrated', 'exceptional acting', 'violent', 'oscar', 'violence', 'cinematography', 'masterpiece', 'social commentary']
+['Shawshank Redemption, The (1994)', 'Silence of the Lambs, The (1991)', 'Fargo (1996)', "Schindler's List (1993)", 'Pulp Fiction (1994)', 'American Beauty (1999)', 'GoodFellas (1990)', 'Usual Suspects, The (1995)', 'Saving Private Ryan (1998)', 'Godfather, The (1972)']
+
+Basis 13
+['pornography', 'redemption', 'weird', 'greed', 'clever', 'suspense', 'visually appealing', 'intense', 'pg-13', 'good acting']
+['Sixth Sense, The (1999)', 'American Beauty (1999)', 'Austin Powers: The Spy Who Shagged Me (1999)', 'American Pie (1999)', 'Ghostbusters (1984)', 'Being John Malkovich (1999)', "Bug's Life, A (1998)", 'Shakespeare in Love (1998)', 'Who Framed Roger Rabbit? (1988)', 'Fight Club (1999)']
+
+Basis 14
+['cute', 'sweet', 'computer animation', 'children', 'talking animals', 'cartoon', 'fairy tale', 'disney', 'kids and family', 'kids']
+['Beauty and the Beast (1991)', 'Lion King, The (1994)', 'Aladdin (1992)', 'Snow White and the Seven Dwarfs (1937)', 'Bambi (1942)', 'Cinderella (1950)', 'Little Mermaid, The (1989)', '101 Dalmatians (1961)', 'Mulan (1998)', 'Jungle Book, The (1967)']
+
+Basis 15
+['very interesting', 'suprisingly clever', 'melancholic', 'loneliness', 'pornography', 'weird', 'greed', 'criterion', 'culture clash', 'social commentary']
+['Drugstore Cowboy (1989)', 'Glengarry Glen Ross (1992)', 'Crumb (1994)', 'Raging Bull (1980)', 'Sid and Nancy (1986)', 'Roger & Me (1989)', 'Bad Lieutenant (1992)', 'Blue Velvet (1986)', "Miller's Crossing (1990)", 'Short Cuts (1993)']
+
+Basis 16
+['big budget', 'fast paced', 'action packed', 'good action', 'special effects', 'oscar winner', 'original plot', 'tense', 'adventure', 'action']
+['Terminator 2: Judgment Day (1991)', 'Matrix, The (1999)', 'Jurassic Park (1993)', 'Braveheart (1995)', 'Fugitive, The (1993)', 'Men in Black (1997)', 'Saving Private Ryan (1998)', 'Total Recall (1990)', 'Hunt for Red October, The (1990)', 'Independence Day (ID4) (1996)']
+
+Basis 17
+['absurd', 'affectionate', 'witty', 'highly quotable', 'humorous', 'quotable', 'funny', 'cult classic', 'comedy', 'masterpiece']
+['Monty Python and the Holy Grail (1974)', 'Young Frankenstein (1974)', "Monty Python's Life of Brian (1979)", 'Annie Hall (1977)', 'Blazing Saddles (1974)', 'Animal House (1978)', 'This Is Spinal Tap (1984)', 'M*A*S*H (1970)', 'Sting, The (1973)', 'Raising Arizona (1987)']
+
+Basis 18
+['splatter', 'adaptation', 'death', 'supernatural', 'transformation', 'gory', 'horror', 'scary', 'creepy', 'suspenseful']
+['Exorcist, The (1973)', 'Shining, The (1980)', 'Halloween (1978)', 'Carrie (1976)', 'Psycho (1960)', 'Poltergeist (1982)', 'Nightmare on Elm Street, A (1984)', 'Jaws (1975)', 'Misery (1990)', 'American Werewolf in London, An (1981)']
+
+Basis 19
+['police investigation', 'twists & turns', 'thriller', 'corruption', 'secrets', 'suspenseful', 'murder', 'tense', 'greed', 'brutality']
+['Seven (Se7en) (1995)', 'Usual Suspects, The (1995)', 'Game, The (1997)', 'L.A. Confidential (1997)', 'Basic Instinct (1992)', "Devil's Advocate, The (1997)", 'Heat (1995)', 'Cape Fear (1991)', 'Firm, The (1993)', 'Simple Plan, A (1998)']
+
+Basis 20
+['gunfight', 'tense', 'cinematography', 'dramatic', 'greed', 'culture clash', 'brutality', 'suspense', 'intense', 'classic']
+['Great Escape, The (1963)', 'Dirty Dozen, The (1967)', 'Good, The Bad and The Ugly, The (1966)', 'Fistful of Dollars, A (1964)', 'Outlaw Josey Wales, The (1976)', 'High Plains Drifter (1972)', 'Dances with Wolves (1990)', 'For a Few Dollars More (1965)', 'Patton (1970)', 'Guns of Navarone, The (1961)']
+
+Basis 21
+['suprisingly clever', 'pornography', 'quotable', 'violence', 'funny', 'weird', 'cult classic', 'comedy', 'very funny', 'social commentary']
+['Clerks (1994)', 'South Park: Bigger, Longer and Uncut (1999)', 'Austin Powers: International Man of Mystery (1997)', 'Swingers (1996)', "There's Something About Mary (1998)", 'American Pie (1999)', 'Dazed and Confused (1993)', 'Fight Club (1999)', 'Dogma (1999)', 'Rushmore (1998)']
+
+Basis 22
+['fantasy world', 'visually stunning', 'stylized', 'cult film', 'visual', 'complex', 'violence', 'weird', 'cult classic', 'masterpiece']
+['Akira (1988)', 'Army of Darkness (1993)', 'City of Lost Children, The (1995)', 'Dark Crystal, The (1982)', 'Ghost in the Shell (Kokaku kidotai) (1995)', 'Dark City (1998)', 'Labyrinth (1986)', 'Time Bandits (1981)', 'Brazil (1985)', 'Professional, The (a.k.a. Leon: The Professional) (1994)']
+
+Basis 23
+['love', 'relationships', 'romantic comedy', 'romance', 'girlie movie', 'chick flick', 'beautiful scenery', 'happy ending', 'feel good movie', 'love story']
+['Sleepless in Seattle (1993)', 'Notting Hill (1999)', 'Pretty Woman (1990)', "My Best Friend's Wedding (1997)", 'Four Weddings and a Funeral (1994)', 'While You Were Sleeping (1995)', 'Sense and Sensibility (1995)', "You've Got Mail (1998)", 'Emma (1996)', 'American President, The (1995)']
+
+Basis 24
+['oscar', 'redemption', 'oscar winner', 'childhood', 'dramatic', 'suspense', 'intense', 'classic', 'pg-13', 'good acting']
+['Rain Man (1988)', 'Dead Poets Society (1989)', 'Field of Dreams (1989)', 'E.T. the Extra-Terrestrial (1982)', 'Apollo 13 (1995)', 'Hoosiers (1986)', 'Shawshank Redemption, The (1994)', "It's a Wonderful Life (1946)", 'Platoon (1986)', "Ferris Bueller's Day Off (1986)"]
+
+Basis 25
+['very interesting', 'enigmatic', 'suprisingly clever', 'complex', 'melancholic', 'loneliness', 'pornography', 'weird', 'criterion', 'social commentary']
+['Election (1999)', "Boys Don't Cry (1999)", 'Run Lola Run (Lola rennt) (1998)', 'All About My Mother (Todo Sobre Mi Madre) (1999)', 'Sweet Hereafter, The (1997)', 'Opposite of Sex, The (1998)', 'Player, The (1992)', 'Being John Malkovich (1999)', 'Secrets & Lies (1996)', 'Ice Storm, The (1997)']
+
+Basis 26
+['1980s', '80s', 'humorous', 'quotable', 'childhood', 'funny', 'cult classic', 'comedy', 'very funny', 'clever']
+["Ferris Bueller's Day Off (1986)", 'Breakfast Club, The (1985)', 'Big (1988)', 'Fast Times at Ridgemont High (1982)', 'Ghostbusters (1984)', 'Trading Places (1983)', 'Bull Durham (1988)', 'When Harry Met Sally... (1989)', 'Caddyshack (1980)', 'Fish Called Wanda, A (1988)']
+
+Basis 27
+['80s', 'goofy', 'silly fun', 'predictable', 'fun', 'family', 'comedy', 'adventure', 'cult classic', 'very funny']
+['Weird Science (1985)', 'Crocodile Dundee (1986)', 'Police Academy (1984)', 'Fletch (1985)', 'Mr. Mom (1983)', 'Karate Kid, The (1984)', 'Bachelor Party (1984)', 'Indiana Jones and the Temple of Doom (1984)', "Porky's (1981)", 'Money Pit, The (1986)']
+
+Basis 28
+['animation', 'witty', 'light', 'humorous', 'original plot', 'fun', 'entertaining', 'funny', 'comedy', 'very funny']
+['Wrong Trousers, The (1993)', 'Close Shave, A (1995)', 'Grand Day Out, A (1992)', 'Toy Story 2 (1999)', 'Chicken Run (2000)', 'Toy Story (1995)', 'Wallace & Gromit: The Best of Aardman Animation (1996)', 'Babe (1995)', 'Creature Comforts (1990)', "Bug's Life, A (1998)"]
+
+Basis 29
+['happy ending', 'feel good movie', 'feel-good', 'light', 'humorous', 'fun', 'entertaining', 'family', 'funny', 'comedy']
+['As Good As It Gets (1997)', 'Groundhog Day (1993)', 'Forrest Gump (1994)', 'My Cousin Vinny (1992)', 'Full Monty, The (1997)', 'Toy Story (1995)', "There's Something About Mary (1998)", 'Pleasantville (1998)', 'League of Their Own, A (1992)', 'Four Weddings and a Funeral (1994)']
+
+Basis 30
+['good music', 'musical', 'love story', 'romantic', 'adapted from:book', 'light', 'oscar (best supporting actress)', 'oscar winner', 'childhood', 'family']
+['My Fair Lady (1964)', 'West Side Story (1961)', "Singin' in the Rain (1952)", 'Sound of Music, The (1965)', 'Mary Poppins (1964)', 'Wizard of Oz, The (1939)', 'King and I, The (1956)', 'Fantasia (1940)', 'American in Paris, An (1951)', 'Lady and the Tramp (1955)']

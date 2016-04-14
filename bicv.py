@@ -1,9 +1,8 @@
-from pymf import NMF, WNMF, base
+from pymf import WNMF
 import numpy as np
 import pandas as pd
 
 df = pd.read_csv("./data/1M/ratings.dat", sep='::', engine='python')
-# df = pd.read_csv("./data/small/ratings.csv")
 df.columns = ['userId', 'movieId', 'rating', 'timestamp']
 ratings = df.pivot(index="movieId", columns="userId", values="rating")
 ratings.fillna(0, inplace=True)

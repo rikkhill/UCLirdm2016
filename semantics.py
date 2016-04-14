@@ -4,12 +4,16 @@
 import pandas as pd
 import numpy as np
 from collections import defaultdict
+import sys
 
+try:
+    sys.argv[1]
+except IndexError:
+    dim = 10
+else:
+    dim = sys.argv[1]
 
 base_dir = "./data/1M/"
-
-dim = 200
-
 base_movies = pd.read_csv(base_dir + "movies.dat", sep="::", header=None, engine='python')
 base_movies.columns = ["movieId", "title", "genre"]
 
@@ -32,7 +36,6 @@ rated_movies = ratings['movieId'].unique().tolist()
 base_movies = base_movies[base_movies['movieId'].isin(rated_movies)]
 
 (K, N) = rel_matrix.shape
-print(K, N)
 basis_tags = []
 movie_examples = []
 

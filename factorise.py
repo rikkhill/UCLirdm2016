@@ -1,25 +1,23 @@
-# Scratchpad script
+# Factorise ratings matrix
 
-import numpy as np
 import pandas as pd
 from pymf import *
-from collections import defaultdict
+import sys
+
+try:
+    sys.argv[1]
+except IndexError:
+    # Sensible default
+    K = 10
+else:
+    K = sys.argv[1]
 
 # Lets build a ratings matrix
-
-K = 10
-
-df = pd.read_csv("./data/small/ratings.csv")
-# df = pd.read_csv("./data/1M/ratings.dat", sep='::')
+df = pd.read_csv("./data/1M/ratings.dat", sep='::', engine='python')
 df.columns = ['userId', 'movieId', 'rating', 'timestamp']
 
 
 ratings = df.pivot(index="movieId", columns="userId", values="rating")
-
-print(df["movieId"].unique().shape)
-
-print(ratings.shape)
-
 ratings.fillna(0, inplace=True)
 
 rMatrix = ratings.as_matrix()

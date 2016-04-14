@@ -1,0 +1,40 @@
+
+Basis 1
+['happy ending', 'natural disaster', 'girlie movie', 'feel good movie', 'love story', 'predictable', 'feel-good', 'romantic', 'family', 'comedy']
+['Pretty Woman (1990)', 'Sleepless in Seattle (1993)', 'Forrest Gump (1994)', "You've Got Mail (1998)", 'American President, The (1995)', 'Ghost (1990)', 'Titanic (1997)', 'Jerry Maguire (1996)', "My Best Friend's Wedding (1997)", 'Notting Hill (1999)']
+
+Basis 2
+['children', 'adapted from:book', 'unlikely friendships', 'kids and family', 'fun', 'kids', 'light', 'childhood', 'family', 'entertaining']
+['Beauty and the Beast (1991)', 'Aladdin (1992)', 'Snow White and the Seven Dwarfs (1937)', 'Lion King, The (1994)', 'Cinderella (1950)', 'Lady and the Tramp (1955)', 'Mary Poppins (1964)', 'Little Mermaid, The (1989)', 'Fantasia (1940)', 'Wizard of Oz, The (1939)']
+
+Basis 3
+['very good', 'clever', 'very funny', 'intense', 'brutality', 'talky', 'suspense', 'good acting', 'visually appealing', 'pg-13']
+['American Beauty (1999)', 'Being John Malkovich (1999)', 'Sixth Sense, The (1999)', 'Fight Club (1999)', 'Gladiator (2000)', 'Clerks (1994)', 'Election (1999)', 'American Pie (1999)', 'South Park: Bigger, Longer and Uncut (1999)', 'Shakespeare in Love (1998)']
+
+Basis 4
+['humorous', 'funny', 'hilarious', 'quotable', 'comedy', 'clever', 'cult classic', 'very funny', 'classic', 'talky']
+["Ferris Bueller's Day Off (1986)", 'Airplane! (1980)', 'Fish Called Wanda, A (1988)', 'Raising Arizona (1987)', 'Caddyshack (1980)', 'Fast Times at Ridgemont High (1982)', 'Breakfast Club, The (1985)', 'Trading Places (1983)', 'Stripes (1981)', 'Big (1988)']
+
+Basis 5
+['melancholic', 'loneliness', 'pornography', 'social commentary', 'greed', 'oscar (best actress)', 'criterion', 'dramatic', 'brutality', 'talky']
+['Crying Game, The (1992)', 'Fargo (1996)', 'Dead Man Walking (1995)', 'Boogie Nights (1997)', 'Lone Star (1996)', 'Player, The (1992)', 'Sling Blade (1996)', 'Pulp Fiction (1994)', 'Ice Storm, The (1997)', 'Like Water for Chocolate (Como agua para chocolate) (1992)']
+
+Basis 6
+['big budget', 'fast paced', 'cool', 'exciting', 'good action', 'action packed', 'fight scenes', 'weapons', 'violence', 'action']
+['Hunt for Red October, The (1990)', 'Die Hard 2 (1990)', 'Rock, The (1996)', 'Fugitive, The (1993)', 'Clear and Present Danger (1994)', 'Patriot Games (1992)', 'Speed (1994)', 'Enemy of the State (1998)', 'Die Hard: With a Vengeance (1995)', 'Mission: Impossible (1996)']
+
+Basis 7
+['cult film', 'violent', 'murder', 'adaptation', 'horror', 'pornography', 'violence', 'greed', 'criterion', 'cult classic']
+['Exorcist, The (1973)', 'Shining, The (1980)', 'Halloween (1978)', 'Poltergeist (1982)', 'Nightmare on Elm Street, A (1984)', 'American Werewolf in London, An (1981)', 'Scream (1996)', 'Carrie (1976)', 'Misery (1990)', 'Fly, The (1986)']
+
+Basis 8
+['oscar winner', 'oscar', 'tense', 'quotable', 'cinematography', 'masterpiece', 'oscar (best actress)', 'intense', 'dramatic', 'classic']
+['Shawshank Redemption, The (1994)', 'Silence of the Lambs, The (1991)', 'Saving Private Ryan (1998)', "Schindler's List (1993)", 'Star Wars: Episode IV - A New Hope (1977)', 'Star Wars: Episode V - The Empire Strikes Back (1980)', 'Raiders of the Lost Ark (1981)', 'Godfather, The (1972)', 'Fargo (1996)', 'Braveheart (1995)']
+
+Basis 9
+['enigmatic', 'oscar (best supporting actress)', 'cinematography', 'social commentary', 'masterpiece', 'oscar (best actress)', 'criterion', 'dramatic', 'culture clash', 'classic']
+['Chinatown (1974)', 'Casablanca (1942)', 'North by Northwest (1959)', 'Maltese Falcon, The (1941)', 'Citizen Kane (1941)', 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963)', 'Annie Hall (1977)', 'Rear Window (1954)', 'Some Like It Hot (1959)', 'African Queen, The (1951)']
+
+Basis 10
+['visually stunning', 'technology', 'scifi', 'sci fi', 'sci-fi', 'visual', 'original plot', 'first contact', 'science fiction', 'future']
+['Blade Runner (1982)', 'Star Wars: Episode IV - A New Hope (1977)', 'Matrix, The (1999)', 'Star Wars: Episode V - The Empire Strikes Back (1980)', 'Terminator, The (1984)', 'Star Trek: The Wrath of Khan (1982)', 'Aliens (1986)', 'Alien (1979)', 'Star Wars: Episode VI - Return of the Jedi (1983)', 'Terminator 2: Judgment Day (1991)']
