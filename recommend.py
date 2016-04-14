@@ -28,10 +28,10 @@ users = np.genfromtxt('output/dimusers{}.csv'.format(K)).transpose()
 print(movies.shape)
 print(users.shape)
 
-movie_sums = movies.sum(axis=0)
+movie_sums = np.linalg.norm(movies, axis=0)
 movies = movies / movie_sums[np.newaxis, :]
 
-user_sums = users.sum(axis=0)
+user_sums = np.linalg.norm(users, axis=0)
 users = users / user_sums[np.newaxis, :]
 
 base_movies = pd.read_csv(base_dir + "movies.dat", sep="::", header=None, engine='python')
