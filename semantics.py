@@ -11,7 +11,7 @@ try:
 except IndexError:
     dim = 10
 else:
-    dim = sys.argv[1]
+    dim = int(sys.argv[1])
 
 base_dir = "./data/1M/"
 base_movies = pd.read_csv(base_dir + "movies.dat", sep="::", header=None, engine='python')

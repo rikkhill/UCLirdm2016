@@ -10,7 +10,7 @@ except IndexError:
     # Sensible default
     K = 10
 else:
-    K = sys.argv[1]
+    K = int(sys.argv[1])
 
 # Lets build a ratings matrix
 df = pd.read_csv("./data/1M/ratings.dat", sep='::', engine='python')
