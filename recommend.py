@@ -25,9 +25,14 @@ base_dir = "./data/1M/"
 
 movies = np.genfromtxt('output/dimmoviesK{}.csv'.format(K))
 users = np.genfromtxt('output/dimusers{}.csv'.format(K)).transpose()
+print(movies.shape)
+print(users.shape)
 
-movies /= np.linalg.norm(movies)
-users /= np.linalg.norm(users)
+movie_sums = movies.sum(axis=0)
+movies = movies / movie_sums[np.newaxis, :]
+
+user_sums = users.sum(axis=0)
+users = users / user_sums[np.newaxis, :]
 
 base_movies = pd.read_csv(base_dir + "movies.dat", sep="::", header=None, engine='python')
 base_movies.columns = ["movieId", "title", "genre"]
