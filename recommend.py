@@ -63,7 +63,7 @@ ax.plot(range(1,K+1), user, label = 'user {}'.format(user_i), linewidth=2, c='bl
 for i in movie_i:
     movie = movies[i] 
     ax.plot(range(1,K+1), movie, label = base_movies.iloc[i]["title"])
-ax.legend(bbox_to_anchor=(0.5, -0.75), loc='lower center', ncol=2)
+ax.legend(bbox_to_anchor=(0.5, -0.1), loc='upper center', ncol=1)
 #this is to make the user to be on top, but the first on the legend
 ax.plot(range(1,K+1), user, label = 'user {}'.format(user_i), linewidth=2, c='black') 
 plt.show(fig)
